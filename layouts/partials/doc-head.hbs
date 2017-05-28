@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ title }}</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{# if description }}
+    <meta name="description" content="{{ description }}">
+    {{ else }}
+    <meta name="description" content="{{ site.description }}">
+    {{/ if }}
+    <meta name="theme-color" content="#583154" />
+
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="/assets/ico/icon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/favicon-152.png">
+</head>

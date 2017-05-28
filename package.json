@@ -1,0 +1,46 @@
+{
+  "name": "metalsmith-netlify-boilerplate",
+  "version": "1.0.0",
+  "description": "A setup to get you going on Netlify with a Metalsmith static site.",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm install",
+    "start": "node . && npm run postbuild",
+    "postbuild": "npm run copy-assets && npm run minify",
+    "copy-assets": "cp -r assets dist/ && cp robots.txt dist/ && cp manifest.json dist/ && cp service-worker.js dist/",
+    "minify": "npm run minify:js && npm run minify:css",
+    "minify:js": "uglifyjs ./dist/assets/js/*.js -c -m -o ./dist/assets/js/script.min.js",
+    "minify:css": "cleancss --level 2 -o ./dist/assets/css/styles.min.css ./dist/assets/css/*.css && postcss ./dist/assets/css/styles.min.css --use autoprefixer -o ./dist/assets/css/styles.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreasvirkus/metalsmith-boilerplate.git"
+  },
+  "keywords": [
+    "metalsmith",
+    "portfolio"
+  ],
+  "author": "https://github.com/andreasvirkus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreasvirkus/metalsmith-boilerplate/issues"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.1.1",
+    "clean-css-cli": "^4.1.3",
+    "handlebars": "^4.0.8",
+    "metalsmith": "^2.3.0",
+    "metalsmith-autoprefixer": "^1.1.1",
+    "metalsmith-collections": "^0.9.0",
+    "metalsmith-drafts": "0.0.1",
+    "metalsmith-layouts": "^1.8.1",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-navigation": "^0.2.9",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-sitemap": "^1.2.0",
+    "moment": "^2.18.1",
+    "postcss-cli": "^4.0.0",
+    "uglify-js": "^3.0.10"
+  }
+}

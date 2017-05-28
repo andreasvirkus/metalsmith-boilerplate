@@ -1,0 +1,27 @@
+.blog__menu-link {
+    text-transform: uppercase;
+}
+
+.blog__title-divider {
+    height: 3px;
+    background-image: linear-gradient(90deg, #0ec1f6, #8823de);
+}
+
+code {
+    border: 1px solid #d8e0e4;
+    border-radius: 2px;
+    color: #c25;
+    font-size: .8em;
+    line-height: 1em;
+    white-space: pre-wrap;
+    vertical-align: middle;
+    padding: .2rem .3rem .1rem;
+    font-family: Consolas,monaco,monospace;
+}
+pre code {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    color: #333;
+    background: #fff;
+}

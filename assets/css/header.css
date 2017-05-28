@@ -1,0 +1,18 @@
+header {
+    text-align: center;
+}
+
+header h2 {
+    font-size: 4rem;
+    border: 5px solid;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.menu__item.active {
+    
+}

@@ -1,0 +1,9 @@
+<nav class="blog__menu" role="navigation">
+    <ul class="blog__menu-list">
+        {{# each collections.posts }}
+        <li class="blog__menu-item {{#is this.path @root.path }}active{{/is}}">
+            <a href="/{{ this.path }}" class="blog__menu-link">{{ this.title }}</a> | <em>{{ date this.date }}</em>
+        </li>
+        {{/ each }}
+    </ul>
+</nav>

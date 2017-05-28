@@ -1,0 +1,17 @@
+{{> doc-head }}
+<link href="/assets/css/blog.css" rel="stylesheet">
+<body>
+    {{> header }}
+
+    <main>
+        <h1>{{ title }}</h1>
+        <h3>{{ description }}</h3>
+
+        {{{ contents }}}
+
+        {{> blog-nav }}
+    </main>
+
+    {{> footer }}
+</body>
+</html>
