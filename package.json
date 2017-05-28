@@ -19,7 +19,9 @@
   },
   "keywords": [
     "metalsmith",
-    "portfolio"
+    "base",
+    "template",
+    "netlify"
   ],
   "author": "https://github.com/andreasvirkus",
   "license": "ISC",
