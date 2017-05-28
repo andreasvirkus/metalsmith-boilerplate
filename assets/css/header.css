@@ -13,6 +13,6 @@ header h2 {
     padding: 0;
 }
 
-.menu__item.active {
-    
+.menu__item[aria-current="page"] {
+    text-decoration: underline;
 }

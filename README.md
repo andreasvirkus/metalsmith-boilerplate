@@ -2,6 +2,12 @@
 
 A setup to get you up-and-running with Metalsmith. Includes offline-support.
 
+## Getting started:
+
+- Install dependencies: `npm install`
+- Run the build `npm start`
+- Son of a gun, we're done! Your site is now in the `/dist` directory.
+
 This project puts the following to good use:
 - metalsmith-markdown for writing content fast
 - metalsmith-drafts for saving work for later
