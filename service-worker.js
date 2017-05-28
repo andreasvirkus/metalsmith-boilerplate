@@ -6,7 +6,7 @@ var offlineFundamentals = [
   '/assets/js/script.min.js',
   '/index.html',
   '/about/index.html',
-  '/thoughts/index.html',
+  '/posts/index.html',
   '/contact/index.html',
 ];
 
