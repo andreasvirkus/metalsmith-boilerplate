@@ -1,7 +1,7 @@
 ---
-title: Building dashboards for your site
+title: Deploying on Netlify
 layout: post.hbs
-description: I'll go through setting up these dashboards that I don't have yet.
+description: I'll go through this super simple process.
 date: 05-20-2017
 ---
 
